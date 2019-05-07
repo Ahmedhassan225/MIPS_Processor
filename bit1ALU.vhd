@@ -53,8 +53,8 @@ signal tb5: STD_LOGIC_VECTOR (1 downto 0);
 signal nres: STD_LOGIC;
 begin
 --Smux1: mux2x1 GENERIC MAP (n) PORT MAP (oper(3)&oper(2),a,not(a),tb1);
-tmpres(0) <= a and b;
-tmpres(1) <= a or b;
+tmpres(0) <= ta and tb;
+tmpres(1) <= ta or tb;
 
 S1mux: mux2x1 PORT MAP (oper(3),a,not(a),ta);
 S2mux: mux2x1 PORT MAP (oper(2),b,not(b),tb);

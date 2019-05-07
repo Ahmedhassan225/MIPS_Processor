@@ -7,9 +7,9 @@ ENTITY MUX IS
 		N : INTEGER := 32
 	);
 	PORT (
+		mux_ctl  : IN STD_logic;
 		mux_in0  : IN std_logic_vector(N - 1 DOWNTO 0);
 		mux_in1  : IN std_logic_vector(N - 1 DOWNTO 0);
-		mux_ctl  : IN STD_logic;
 		mux_out  : OUT STD_logic_vector(N - 1 DOWNTO 0)
 	);
 END MUX;
